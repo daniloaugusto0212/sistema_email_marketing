@@ -1,0 +1,316 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+
+body{
+	background: rgb(225, 225, 225);
+}
+
+.w30{
+	background: white;
+	width: 30%;
+	float: left;
+	padding: 30px;
+	border: 10px solid rgb(225, 225, 225);
+}
+
+.w40{
+	background: white;
+	width: 40%;
+	float: left;
+	padding: 30px;
+	border: 10px solid rgb(225, 225, 225);
+}
+
+
+.w60{
+	background: white;
+	width: 60%;
+	float: left;
+	padding: 30px;
+	border: 10px solid rgb(225, 225, 225);
+}
+
+.w70{
+	background: white;
+	width: 70%;
+	float: left;
+	padding: 30px;
+	border: 10px solid rgb(225, 225, 225);
+
+}
+
+.w100{
+	background: white;
+	width: 100%;
+	float: left;
+	padding: 30px;
+	border: 10px solid rgb(225, 225, 225);
+
+}
+
+.container{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.clear{clear: both;}
+
+header{
+	padding: 8px 0;
+	background: #64b5f6;
+}
+
+header .logo{
+	float: left;
+}
+
+header .logo a{
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+header .form-login{
+	float: right;
+}
+
+header .form-login input[type=text],
+header .form-login input[type=password]{
+	width: 200px;
+	height: 25px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+}
+
+header .form-login input[type=submit]{
+	background: #2196f3;
+	border: 0;
+	cursor: pointer;
+	color: white;
+	height: 25px;
+	width: 120px;
+}
+
+.box{
+	margin: 20px auto;
+	background: white;
+	padding: 30px 15px;
+}
+
+h2.title{
+	font-weight: normal;
+	color: rgb(138, 138, 138);
+	font-size: 20px;
+	text-transform: uppercase;
+	border-bottom: 2px solid rgb(138, 138, 138);	
+}
+
+section.cadastro h2{		
+	font-weight: normal;
+	color: rgb(138, 138, 138);
+	font-size: 20px;
+	text-transform: uppercase;
+	border-bottom: 2px solid rgb(138, 138, 138);
+}
+
+section.cadastro form{
+	margin-top: 25px;
+}
+
+section.cadastro input[type=text],
+section.cadastro input[type=password],
+section.cadastro input[type=email]{
+	width: 100%;
+	height: 35px;
+	margin-bottom: 8px;
+}
+
+section.cadastro input[type=file]{
+	border: 1px solid #ccc;
+	width: 100%;
+	padding: 8px;
+}
+
+section.cadastro input[type=submit]{
+	background: #2196f3;
+	border: 0;
+	cursor: pointer;
+	color: white;
+	display: block;
+	height: 30px;
+	width: 130px;
+	margin-top: 10px;
+}
+
+section.cadastrp p{
+	font-size: 14px;
+	margin: 8px 0;
+	color: rgb(138, 138, 138);
+	font-weight: lighter;
+}
+
+.btn-opt-menu{
+	float:right;
+}
+
+.btn-opt-menu a{
+	color: white;
+	text-decoration: none;	
+	background: #42a5f5;
+	padding: 10px 7px;
+	display: inline-block;
+}
+
+.btn-opt-menu a:hover{
+	text-decoration: underline;
+}
+
+.container-img{
+	margin-top: 10px;
+}
+
+.container-img img{
+	width: 100%;
+}
+
+.lista-amigos{
+	margin-top: 10px ;
+}
+
+.lista-amigos h3{
+	background: #64b5f6;
+	color: white;
+	padding: 8px;
+}
+
+.img-single-amigo{
+	float: left;
+	width: 33.3%;
+	padding-top: 33.3%;
+	position: relative;
+}
+
+.img-single-amigo-wraper{
+	position: absolute;
+	left: 5%;
+	top: 5%;
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	background-size: 100% 100%;
+	background-color: #ccc;
+}
+
+.box-imagem{
+	width: 100%;
+	padding-top: 100%;
+	position: relative;
+}
+
+.box-imagem-wraper{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-size: 100% 100%;
+}
+
+.membro-listagem{
+	width: 20%;
+	float: left;
+	padding: 8px;
+}
+
+.membro-listagem p{
+	color: #4b4b4b;
+	font-size: 15px;
+	margin: 8px 0;
+}
+
+.membro-listagem a{
+	display: inline-block;
+	background: #2196f3;	
+	color: white;
+	padding: 4px 5px;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.membro-listagem span{
+	display: inline-block;
+	background: #2196f3;	
+	color: white;
+	padding: 4px 5px;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.solicitacoes-table{
+	margin: 10px 0;
+	width: 100%;
+	
+}
+
+.solicitacoes-table td{
+	text-align: left;
+	
+}
+
+.solicitacoes-table img{
+	max-width: 90px;
+}
+
+.solicitacoes-table p{
+	margin-top: 8px;
+	font-size: 14px;
+	color: #444;
+}
+
+section.feed form{margin-top: 15px;}
+
+section.feed textarea{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	padding: 8px;
+}
+
+section.feed input[type=submit]{
+	background: #2196f3;
+	border: 0;
+	margin-top: 8px;
+	cursor: pointer;
+	color: white;
+	height: 25px;
+	width: 120px;
+}
+
+.post-single-user{margin: 10px 0;}
+
+.img-user-post{
+	float: left;
+}
+
+.img-user-post img{
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+}
+
+.post-user-single{
+	float: left;
+	width: calc(100% - 60px);
+	padding: 4px 10px;
+}
+
+.post-user-single p{
+	padding: 0 5px;
+	font-size: 15px;
+}
+
+
