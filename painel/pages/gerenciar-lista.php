@@ -8,6 +8,13 @@
         $sql->execute(array($nome_lista));
         Painel::alert('sucesso','A lista foi criada com sucesso!');
     }
+    if (isset($_GET['excluir'])) {
+        $idExcluir = intval($_GET['excluir']);        
+        Painel::deletar('tb_admin.listas_email',$idExcluir);
+        Painel::alertJS('A lista foi excluída com sucesso!');
+        Painel::redirect(INCLUDE_PATH_PAINEL.'gerenciar-lista');
+        
+    }
 
 ?>
     <form method="post">
@@ -41,7 +48,7 @@
             ?>
             <tr>
                 <td><?php echo $value['nome_lista'] ?></td>
-                <td><a actionBtn="delete" class="btn delete" href="<?php echo INCLUDE_PATH_PAINEL ?>listar-servicos?excluir=<?php echo $value['id']; ?>"><i class="fa fa-times"></i> Excluir</a></td>
+                <td><a actionBtn="delete" class="btn delete" href="<?php echo INCLUDE_PATH_PAINEL ?>gerenciar-lista?excluir=<?php echo $value['id']; ?>"><i class="fa fa-times"></i> Excluir</a></td>
             </tr>
                 <?php } ?>
         </table>

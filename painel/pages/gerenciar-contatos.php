@@ -15,6 +15,12 @@
            Painel::alert('sucesso', 'O contato foi inserido com sucesso!');
        }
    }
+   if (isset($_GET['excluir'])) {
+    $idExcluir = intval($_GET['excluir']);        
+    Painel::deletar('tb_admin.contatos',$idExcluir);
+    Painel::alertJS('O contato foi excluído com sucesso!');
+    Painel::redirect(INCLUDE_PATH_PAINEL.'gerenciar-contatos');    
+    }
 
 ?>
 <h2><i class="fa fa-pen"></i> Adicionar novo contato</h2>
@@ -77,7 +83,7 @@
                 <td><?php echo $value['nome'] ?></td>
                 <td><?php echo $value['email'] ?></td>
                 <td><?php echo $nomeLista ?></td>
-                <td><a actionBtn="delete" class="btn delete" href="<?php echo INCLUDE_PATH_PAINEL ?>listar-servicos?excluir=<?php echo $value['id']; ?>"><i class="fa fa-times"></i> Excluir</a></td>
+                <td><a actionBtn="delete" class="btn delete" href="<?php echo INCLUDE_PATH_PAINEL ?>gerenciar-contatos?excluir=<?php echo $value['id']; ?>"><i class="fa fa-times"></i> Excluir</a></td>
             </tr>
 
                 <?php } ?>
